@@ -1,16 +1,16 @@
 {
-  "name": "zarlach/laravel-twitch-api",
+  "name": "hootener/laravel-twitch-api",
   "description": "Laravel Twitch RESTful API",
   "license": "MIT",
   "authors": [
     {
-      "name": "Petter Kraabøl",
-      "email": "petter.zarlach@gmail.com"
+      "name": "Eli Hooten",
+      "email": "eli@gamewisp.com"
     }
   ],
   "autoload": {
     "psr-4": {
-      "Zarlach\\TwitchApi\\": "src"
+      "Hootener\\TwitchApi\\": "src"
     }
   },
   "minimum-stability": "dev",
