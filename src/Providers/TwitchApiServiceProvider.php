@@ -1,6 +1,6 @@
 <?php
 
-namespace Zarlach\TwitchApi\Providers;
+namespace Hootener\TwitchApi\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -21,7 +21,7 @@ class TwitchApiServiceProvider extends ServiceProvider
     // Register services
     private function registerServices()
     {
-        $this->app->bind('Zarlach\TwitchApi\Services\TwitchApiService', 'Zarlach\TwitchApi\Services\TwitchApiService');
+        $this->app->bind('Hootener\TwitchApi\Services\TwitchApiService', 'Hootener\TwitchApi\Services\TwitchApiService');
     }
 
     // Add config file

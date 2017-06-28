@@ -1,6 +1,6 @@
 <?php
 
-namespace Zarlach\TwitchApi\Exceptions;
+namespace Hootener\TwitchApi\Exceptions;
 
 use Exception;
 

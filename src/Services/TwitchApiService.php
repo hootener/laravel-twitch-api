@@ -1,22 +1,22 @@
 <?php
 
-namespace Zarlach\TwitchApi\Services;
+namespace Hootener\TwitchApi\Services;
 
-use Zarlach\TwitchApi\API\Api;
-use Zarlach\TwitchApi\API\Authentication;
-use Zarlach\TwitchApi\API\Blocks;
-use Zarlach\TwitchApi\API\Channels;
-use Zarlach\TwitchApi\API\Chat;
-use Zarlach\TwitchApi\API\Follow;
-use Zarlach\TwitchApi\API\Games;
-use Zarlach\TwitchApi\API\Ingests;
-use Zarlach\TwitchApi\API\Root;
-use Zarlach\TwitchApi\API\Search;
-use Zarlach\TwitchApi\API\Streams;
-use Zarlach\TwitchApi\API\Subscriptions;
-use Zarlach\TwitchApi\API\Teams;
-use Zarlach\TwitchApi\API\Users;
-use Zarlach\TwitchApi\API\Videos;
+use Hootener\TwitchApi\API\Api;
+use Hootener\TwitchApi\API\Authentication;
+use Hootener\TwitchApi\API\Blocks;
+use Hootener\TwitchApi\API\Channels;
+use Hootener\TwitchApi\API\Chat;
+use Hootener\TwitchApi\API\Follow;
+use Hootener\TwitchApi\API\Games;
+use Hootener\TwitchApi\API\Ingests;
+use Hootener\TwitchApi\API\Root;
+use Hootener\TwitchApi\API\Search;
+use Hootener\TwitchApi\API\Streams;
+use Hootener\TwitchApi\API\Subscriptions;
+use Hootener\TwitchApi\API\Teams;
+use Hootener\TwitchApi\API\Users;
+use Hootener\TwitchApi\API\Videos;
 
 class TwitchApiService extends Api
 {

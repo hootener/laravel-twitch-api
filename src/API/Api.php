@@ -1,13 +1,14 @@
 <?php
 
-namespace Zarlach\TwitchApi\API;
+namespace Hootener\TwitchApi\API;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Exception\RequestException;
+use GuzzleHttp\Exception\ClientException;
 
-use Zarlach\TwitchApi\Exceptions\RequestRequiresAuthenticationException;
-use Zarlach\TwitchApi\Exceptions\RequestRequiresClientIdException;
+use Hootener\TwitchApi\Exceptions\RequestRequiresAuthenticationException;
+use Hootener\TwitchApi\Exceptions\RequestRequiresClientIdException;
 
 class Api
 {
@@ -52,7 +53,10 @@ class Api
             $this->setClientId($clientId);
         } elseif (config('twitch-api.client_id')) {
             $this->setClientId(config('twitch-api.client_id'));
-        } 
+        } else {
+            //local setup to allow twitch key without publishing config. DELETE
+            $this->clientId = env('TWITCH_KEY', null);
+        }
 
         // GuzzleHttp Client with default parameters.
         $this->client = new Client([

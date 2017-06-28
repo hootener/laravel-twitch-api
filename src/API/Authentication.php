@@ -1,6 +1,6 @@
 <?php
 
-namespace Zarlach\TwitchApi\API;
+namespace Hootener\TwitchApi\API;
 
 /**
  * Twitch documentation: https://github.com/justintv/Twitch-API/blob/master/authentication.md.
