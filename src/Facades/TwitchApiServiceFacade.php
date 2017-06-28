@@ -1,6 +1,6 @@
 <?php
 
-namespace Zarlach\TwitchApi\Facades;
+namespace Hootener\TwitchApi\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
@@ -8,6 +8,6 @@ class TwitchApiServiceFacade extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return 'Zarlach\TwitchApi\Services\TwitchApiService';
+        return 'Hootener\TwitchApi\Services\TwitchApiService';
     }
 }
