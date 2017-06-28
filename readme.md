@@ -1,23 +1,27 @@
 # Twitch RESTful API for Laravel
 
-An easy-to-use RESTful API for Laravel 5
+Note: This is forked from: https://github.com/PetterKraabol/laravel-twitch-api and will
+only be maintained until that project accepts the PR's necessary to catch it up to this
+package.
+
+An easy-to-use RESTful API for Laravel 5, works with Twitch API v5
 
 ## Installation
 
 ```bash
-composer require zarlach/laravel-twitch-api
+composer require hootener/laravel-twitch-api
 ```
 
 In `config/app.php`, add this provider in `providers`
 
 ```php
-Zarlach\TwitchApi\Providers\TwitchApiServiceProvider::class,
+Hootener\TwitchApi\Providers\TwitchApiServiceProvider::class,
 ```
 
 Add this facade in `aliases`
 
 ```php
-'TwitchApi' => Zarlach\TwitchApi\Facades\TwitchApiServiceFacade::class,
+'TwitchApi' => Hootener\TwitchApi\Facades\TwitchApiServiceFacade::class,
 ```
 
 Publish config, then configure your `config/twitch-api.php`
